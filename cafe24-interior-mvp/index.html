@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인테리어 매칭 플랫폼 - MVP</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div id="app-root">
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">씨익 지브로3D 인테리어 매칭 플랫폼</div>
+                <div class="nav-menu">
+                    <a href="#" onclick="loadView('customer/projects')">프로젝트 둘러보기</a>
+                    <a href="#" onclick="loadView('customer/create-project')">프로젝트 등록</a>
+                    <a href="#" onclick="loadView('vendor/dashboard')">업체 대시보드</a>
+                    <a href="#" onclick="loadView('admin/dashboard')">관리자</a>
+                    <button id="loginBtn" onclick="mockLogin()">로그인</button>
+                </div>
+            </div>
+        </nav>
+        
+        <main id="content">
+            <!-- 동적 콘텐츠 영역 -->
+        </main>
+    </div>
+    
+    <script src="public/js/app.js"></script>
+    <script src="public/js/dummy-data.js"></script>
+</body>
+</html>
